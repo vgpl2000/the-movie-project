@@ -1,0 +1,19 @@
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+<div class="mainDiv">
+  <button class="btn2" (click)="closeModal()"><span class="material-symbols-outlined">
+    cancel
+    </span></button>
+  <div class="movie-details">
+    <img class="img" [src]="'https://image.tmdb.org/t/p/w500' + movieDetails.poster_path" alt="Movie Poster" (error)="displayDefault($event)">
+    <h2 class="moviet1">{{ movieDetails.original_title }}</h2>
+
+    <div class="leftAligned">
+      <p class="moviet2" *ngIf="movieDetails.tagline"><b>Tagline: </b>{{ movieDetails.tagline }}</p>
+      <p class="moviet2"><b>Release Date: </b>{{ movieDetails.release_date }}</p>
+      <p class="moviet2">{{ movieDetails.overview }}</p>
+      <p class="moviet2" *ngIf="movieDetails.revenue"><b>Revenue: </b>{{ movieDetails.revenue }}</p>
+      <p class="moviet2" *ngIf="movieDetails.vote_average"><b>Vote Average: </b>{{ movieDetails.vote_average }}</p>
+      <p class="moviet2" *ngIf="movieDetails.vote_count"><b>Vote Count: </b>{{ movieDetails.vote_count }}</p>
+    </div>
+  </div>
+</div>

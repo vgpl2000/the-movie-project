@@ -1,0 +1,89 @@
+.mainDiv {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 30vw;
+    height: fit-content;
+    padding: 5vh 2vw;
+    padding-top: 2vh;
+    background-color: rgb(240, 255, 255);
+    border-radius: 8px;
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    animation: fadeIn 0.1s;
+    transition: all 0.1s ease-in-out;
+    transform-origin: left;
+}
+.mainDiv:hover{
+    scale:1.01;
+    transition: all 0.1s ease-in-out;
+    border: 2px solid black;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.btn2 {
+    width: fit-content;
+    padding: 0;
+    align-items: end;
+    border: none;
+    background-color: azure;
+    cursor: pointer;
+}
+
+.material-symbols-outlined {
+    color: rgb(142, 0, 0);
+    transition: all 0.1s ease-in-out;
+    background-color: transparent;
+    border: none;
+    font-size: 40px;
+}
+
+.material-symbols-outlined:hover {
+    scale: 1.2;
+    transition: all 0.1s ease-in-out;
+}
+
+.movie-details {
+    display: flex;
+    flex-direction: column;
+    gap: 2vh;
+    align-items: center;
+    justify-content: center;
+}
+.leftAligned{
+    display: flex;
+    flex-direction: column;
+    gap: 2vh;
+    align-items: start;
+    justify-content: center;
+}
+
+.img {
+    width: 50%;
+    border-radius: 8px;
+    margin: 0;
+}
+
+.moviet1 {
+    font-size: 28px;
+    font-weight: 800;
+    margin: 0;
+    letter-spacing: 1.3px;
+}
+
+.moviet2 {
+    font-size: 14px;
+    margin: 0;
+}

@@ -1,0 +1,51 @@
+.maintxt {
+    font-family: "Jersey 25", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 90px;
+    text-align: center;
+    margin: 15vh 5vw;
+    font-weight: 500;
+    letter-spacing: 1.2px;
+    cursor: pointer;
+    transition: all 0.1s ease-in-out;
+}
+.maintxt:hover{
+    color: rgb(244, 200, 24);
+    transition: all 0.1s ease-in-out;
+    letter-spacing: 2px;
+}
+
+.search {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5vh 5vw;
+    margin: 20vh 30vw;
+    border-radius: 8px;
+    letter-spacing: 1.5px;
+}
+
+.movietxt {
+    font-size: 38px;
+    padding: 2vh 2vw;
+    border-radius: 8px;
+    text-align: center;
+    transition: all 0.2s ease-in-out;
+}
+
+.movietxt:hover {
+    border: 2px solid rgb(214, 211, 0);
+    scale: 1.05;
+    transition: all 0.2s ease-in-out;
+}
+
+.movietxt:active {
+    border: 2px solid rgb(214, 211, 0);
+}
+
+.searchResult {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

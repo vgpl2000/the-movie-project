@@ -1,0 +1,53 @@
+.mainDiv {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    align-items: center;
+    justify-content: space-evenly;
+    margin: 2vh 2vw;
+    gap: 2vw;
+}
+
+.movieDiv {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: fit-content;
+    border: 1px solid black;
+    border-radius: 8px;
+    padding: 5px;
+    transition: all 0.1s ease-in-out;
+    animation: fadeIn 0.1s;
+    transition: all 0.1s ease;
+    cursor: pointer;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.movieDiv:hover {
+    scale: 1.1;
+    transition: all 0.1s ease-in-out;
+}
+
+.movieImg {
+    width: 100%;
+    border-radius: 8px;
+}
+
+.movieTitle {
+    font-size: 18px;
+    text-align: center;
+    font-weight: 500;
+}
+
+.movieDate {
+    font-size: 14px;
+}

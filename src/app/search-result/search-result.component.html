@@ -1,0 +1,17 @@
+<!-- search-result.component.html -->
+<div class="mainDiv">
+  <div *ngFor="let movie of movieData" class="movieDiv" (click)="viewDetails(movie)">
+    <img [src]="'https://image.tmdb.org/t/p/w500' + movie.poster_path" 
+      alt="Movie Poster" 
+      class="movieImg" 
+      (error)="displayDefault($event)">
+    <p class="movieTitle">{{ movie.original_title }}</p>
+    <p class="movieDate">Release Date: {{ movie.release_date }}</p>
+  </div>
+
+  <app-movie-details 
+    *ngIf="selectedMovie" 
+    [movieId]="selectedMovie.id" 
+    (close)="closeDetails()">
+  </app-movie-details>
+</div>
